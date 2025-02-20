@@ -8,13 +8,12 @@ import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 
 interface RestaurantHeaderProps {
-  restaurant: Pick<Restaurant, "coverImageUrl" | "name">;
+  restaurant: Pick <Restaurant, "coverImageUrl" | "name">;
 }
 
 const RestaurantHeader = ({ restaurant }: RestaurantHeaderProps) => {
   const router = useRouter();
-  const handleBackClick = () => router.back()
- 
+  const handleBackClick = () => router.back();
   return (
     <div className="relative h-[250px] w-full">
       <Button
@@ -29,7 +28,7 @@ const RestaurantHeader = ({ restaurant }: RestaurantHeaderProps) => {
         src={restaurant.coverImageUrl}
         alt={restaurant.name}
         fill
-        className="object-cover"
+        className="object-cover bg-gray-500"
       />
       <Button
         variant="secondary"

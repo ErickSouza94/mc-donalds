@@ -1,6 +1,6 @@
-import { db } from "@/lib/prisma";
+// import { db } from "@/lib/prisma";
 
-export const getRestaurantBySlug = async (slug: string) => {
+// export const getRestaurantBySlug = async (slug: string) => {
 
-    return restaurant
-}
+//     return restaurant
+// }

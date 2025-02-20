@@ -15,8 +15,8 @@ interface ConsumptionMethodOptionProps {
 
 const ConsumptionMethodOption = ({
   slug,
-  imageAlt,
   imageUrl,
+  imageAlt,
   buttonText,
   option,
 }: ConsumptionMethodOptionProps) => {
