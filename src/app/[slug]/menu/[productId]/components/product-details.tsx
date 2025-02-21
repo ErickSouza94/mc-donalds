@@ -4,10 +4,13 @@ import { Prisma } from "@prisma/client"
 import { ScrollArea } from "@radix-ui/react-scroll-area";
 import { ChefHatIcon, ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { formatCurrency } from "@/helpers/format-currency";
+
+import { CartContext } from "../../context/cart";
+import CartSheet from "./cart-sheets";
 
 interface ProductDetailsProps {
     product : Prisma.ProductGetPayload<{
@@ -21,6 +24,7 @@ interface ProductDetailsProps {
 }
 
 const ProductDetails = ({product}: ProductDetailsProps) => {
+    const {toggleCart} = useContext(CartContext)
     const [quantity, setQuantity] = useState<number>(1)
     const handleDecreaseQuantity = () => {
         setQuantity((prev) => {
@@ -35,12 +39,17 @@ const ProductDetails = ({product}: ProductDetailsProps) => {
     const handleIncreaseQuantity = () => {
         setQuantity((prev) => prev +1)
     }
-    
+
+    const handleAddToCart = () => {
+        toggleCart()
+    }
+   
     return (  
+        <>
         <div className="relative z-50 rounded-t-3xl p-5 mt-[-1.5rem] flex flex-auto flex-col overflow-hidden">
                 <div className="flex-auto overflow-hidden">
                     {/* RESTAURANTE */}
-                    <div className="flex items-center gap-1.5">
+                    <div className="flex items-center gap-1.5 mt-1.5">
                         <Image
                         src={product.restaurant.avatarImageUrl}
                         alt={product.restaurant.name}
@@ -87,8 +96,10 @@ const ProductDetails = ({product}: ProductDetailsProps) => {
                   </ScrollArea>
                 </div>
 
-                <Button className="rounded-full w-full mt-2">Adicionar à sacola</Button>
+                <Button className="rounded-full w-full mt-2" onClick={handleAddToCart}>Adicionar à sacola</Button>
         </div>
+        <CartSheet/>
+     </>
     );
 }
  
