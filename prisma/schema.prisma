@@ -58,6 +58,8 @@ model Order {
   total             Float
   status            OrderStatus
   consumptionMethod ConsumptionMethod
+  customerName      String
+  customerCpf       String
   restaurant        Restaurant        @relation(fields: [restaurantId], references: [id], onDelete: Cascade)
   restaurantId      String
   orderProducts     OrderProduct[]
@@ -69,6 +71,7 @@ model OrderProduct {
   id        String   @id @default(uuid())
   product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
   productId String
+  price     Float
   order     Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
   orderId   Int
   quantity  Int
