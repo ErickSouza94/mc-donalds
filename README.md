@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍔 McDonald's Autoatendimento
 
-## Getting Started
+Este projeto foi desenvolvido durante a **FullStack Week** do **FullStack Club** com o objetivo de criar uma aplicação de autoatendimento para o **McDonald's**.
 
-First, run the development server:
+🔗 **Acesse o projeto online:** [mc-donalds-autoatendimento.vercel.app](https://mc-donalds-autoatendimento.vercel.app/mc-donalds)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **🟢 Next.js** - Framework React para desenvolvimento de aplicações web modernas e otimizadas.
+- **🟡 Prisma** - ORM (Object-Relational Mapping) para interagir com o banco de dados de forma eficiente e segura.
+- **🔵 Tailwind CSS** - Framework de CSS utilitário para estilização rápida e consistente.
+- **🔷 TypeScript** - Superset do JavaScript que adiciona tipagem estática ao código, proporcionando maior segurança e previsibilidade.
+- **⚡ Vercel** - Plataforma de hospedagem para aplicações front-end, facilitando o deploy contínuo e escalável.
+- **🛠️ ESLint** - Ferramenta de linting para identificar e corrigir problemas no código JavaScript/TypeScript.
+- **🎨 Prettier** - Formatador de código para manter um estilo consistente em todo o projeto.
+- **📝 PostCSS** - Ferramenta para transformar CSS com plugins JavaScript, permitindo o uso de funcionalidades futuras e outras extensões.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Como Executar o Projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📌 Pré-requisitos
+Certifique-se de ter o **Node.js** instalado em sua máquina.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ▶️ Rodando o projeto localmente
 
-## Deploy on Vercel
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/ErickSouza94/mc-donalds.git
+   cd mc-donalds
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Instale as dependências**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   # ou
+   pnpm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Inicie o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   # ou
+   pnpm dev
+   ```
+
+4. **Abra o navegador e acesse:**
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 🤝 Contribuição
+
+Sinta-se à vontade para abrir **issues** e **pull requests** caso tenha sugestões ou melhorias para o projeto!
+
+🔗 **Repositório no GitHub:** [ErickSouza94/mc-donalds](https://github.com/ErickSouza94/mc-donalds)
+
+---
+
+🛠️ *Projeto desenvolvido para estudos e aprimoramento de habilidades em desenvolvimento Full Stack.* 🚀
